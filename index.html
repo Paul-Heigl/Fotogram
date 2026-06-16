@@ -17,7 +17,7 @@
     />
   </head>
 
-  <body>
+  <body onload="init()">
     <header>
       <div class="header_content">
         <div class="logo">
@@ -52,7 +52,7 @@
             <div class="skip_section">
               <div onclick="changeImage('prev')" class="arrow_button">
                 <button>
-                  <img src="./img/Arrow-Right.png" alt="Previous image" />
+                  <img src="./img/Arrow-Left.svg" alt="Previous image" />
                 </button>
               </div>
 
@@ -62,7 +62,7 @@
 
               <div onclick="changeImage('next')" class="arrow_button">
                 <button>
-                  <img src="./img/Arrow Left.png" alt="Next image" />
+                  <img src="./img/Arrow Right.svg" alt="Next image" />
                 </button>
               </div>
             </div>
@@ -77,6 +77,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

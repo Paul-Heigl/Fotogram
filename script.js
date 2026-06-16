@@ -89,5 +89,3 @@ function updateDialogImage() {
   document.getElementById("picture_counter").textContent =
     currentIndex + 1 + "/" + images.length;
 }
-
-init();

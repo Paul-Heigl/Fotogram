@@ -221,3 +221,50 @@ footer img {
     width: 32px;
   }
 }
+
+@media (max-width: 375px) {
+  dialog {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .dialog_main {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    height: auto;
+    max-height: 90vh;
+    padding: 12px;
+    overflow: hidden;
+  }
+
+  .headline {
+    gap: 8px;
+  }
+
+  .headline h2 {
+    font-size: 20px;
+  }
+
+  .picture_section {
+    width: 100%;
+    max-height: 55vh;
+  }
+
+  .picture_section img {
+    max-width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+  }
+
+  .skip_section {
+    width: 100%;
+  }
+
+  .arrow_button img {
+    width: 28px;
+  }
+
+  .picture_counter p {
+    font-size: 22px;
+  }
+}
