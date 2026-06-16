@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fotogram</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/Favicon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -15,8 +19,10 @@
 
   <body>
     <header>
-      <div class="logo">
-        <img src="./img/Capa_1.svg" />
+      <div class="header_content">
+        <div class="logo">
+          <img src="./img/Capa_1.svg" alt="Fotogram Logo" />
+        </div>
       </div>
     </header>
 
@@ -27,67 +33,15 @@
           <h1>photo album</h1>
         </div>
 
-        <div class="foto_section">
-          <div style="padding-bottom: 40px">
-            <button onclick="openDialog('1.png')" id="1">
-              <img src="./img/thumbs/1.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('2.png')" id="2">
-              <img src="./img/thumbs/2.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('3.png')" id="3">
-              <img src="./img/thumbs/3.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('4.png')" id="4">
-              <img src="./img/thumbs/4.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('5.png')" id="5">
-              <img src="./img/thumbs/5.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('6.png')" id="6">
-              <img src="./img/thumbs/6.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('7.png')" id="7">
-              <img src="./img/thumbs/7.png" alt="" />
-            </button>
-          </div>
-
-          <div>
-            <button onclick="openDialog('8.png')" id="8">
-              <img src="./img/thumbs/8.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('9.png')" id="9">
-              <img src="./img/thumbs/9.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('10.png')" id="10">
-              <img src="./img/thumbs/10.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('11.png')" id="11">
-              <img src="./img/thumbs/11.png" alt="" />
-            </button>
-
-            <button onclick="openDialog('12.png')" id="12">
-              <img src="./img/thumbs/12.png" alt="" />
-            </button>
-          </div>
-        </div>
+        <div class="foto_section" id="foto_section"></div>
 
         <dialog id="myDialog">
           <div class="dialog_main">
             <div class="headline">
-              <h2 id="show_text" style="color: white">Bildtitel</h2>
+              <h2 id="show_text">Bildtitel</h2>
 
               <button id="closeBtn" class="close_button">
-                <img src="./img/close.png" alt="" />
+                <img src="./img/close.png" alt="Close" />
               </button>
             </div>
 
@@ -96,21 +50,19 @@
             </div>
 
             <div class="skip_section">
-              <div onclick="goRight()" class="arrow_button">
+              <div onclick="changeImage('prev')" class="arrow_button">
                 <button>
-                  <img src="./img/Arrow-Right.png" alt="" />
+                  <img src="./img/Arrow-Right.png" alt="Previous image" />
                 </button>
               </div>
 
               <div class="picture_counter">
-                <p id="picture_counter" style="color: white; font-size: 30px">
-                  1/12
-                </p>
+                <p id="picture_counter">1/12</p>
               </div>
 
-              <div onclick="goLeft()" class="arrow_button">
+              <div onclick="changeImage('next')" class="arrow_button">
                 <button>
-                  <img src="./img/Arrow Left.png" alt="" />
+                  <img src="./img/Arrow Left.png" alt="Next image" />
                 </button>
               </div>
             </div>
@@ -121,7 +73,7 @@
 
     <footer>
       <div>
-        <img src="./img/Frame 6.svg" alt="" />
+        <img src="./img/Frame 6.svg" alt="Fotogram Footer Logo" />
       </div>
     </footer>
 
